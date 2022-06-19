@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from blog.views import frontpage, post_detail, about, contact, privacy, games
+from blog.views import frontpage, post_detail, about, contact, privacy, games, file
 
 
 urlpatterns = [
@@ -24,7 +24,8 @@ urlpatterns = [
     path('about/',about, name='about'), 
     path('contact/',contact, name='contact'), 
     path('privacy/',privacy, name='privacy'),  
-    path('games/',games, name='games'),    
+    path('games/',games, name='games'),  
+    path('file/',file, name='file'),    
     path('<slug:slug>/', post_detail, name='post_detail'),
   
 ]
