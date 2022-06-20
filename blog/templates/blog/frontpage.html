@@ -39,6 +39,7 @@
     }
 </style>
 <div class="post block">
+    <div class="card mt-4">    
 
     <h2 class="subtitle" class=" ">{{ post.title }}</h2>
 
@@ -51,6 +52,7 @@
             <button id="home" onclick="window.open('{% url 'post_detail' post.slug %}','_self');">Read more</button>
         </section>
     </small>
+    </div>
 </div>
 {% endfor %}
 {% endblock %}
